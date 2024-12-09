@@ -76,7 +76,7 @@ public final class viewCourses extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        backbutton.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\back.png")); // NOI18N
+        backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
         backbutton.setText("Back");
         backbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,7 +102,7 @@ public final class viewCourses extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(backbutton)
-                .addGap(0, 42, Short.MAX_VALUE))
+                .addGap(0, 41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

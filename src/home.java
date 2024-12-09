@@ -30,13 +30,13 @@ public class home extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         addStudent = new javax.swing.JButton();
-        Operation1 = new javax.swing.JButton();
+        updateStudent = new javax.swing.JButton();
         showStudents = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         addAdmin = new javax.swing.JButton();
-        operation2 = new javax.swing.JButton();
+        updateAdmin = new javax.swing.JButton();
         showAdmin = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -55,25 +55,37 @@ public class home extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Home", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Home (1/2)", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 18), new java.awt.Color(255, 255, 255))); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\logo.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
 
-        addStudent.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\AddStudent.png")); // NOI18N
+        addStudent.setBackground(new java.awt.Color(102, 102, 102));
+        addStudent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AddStudent.png"))); // NOI18N
+        addStudent.setBorder(null);
+        addStudent.setBorderPainted(false);
+        addStudent.setContentAreaFilled(false);
         addStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addStudentActionPerformed(evt);
             }
         });
 
-        Operation1.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\configuration.png")); // NOI18N
-        Operation1.addActionListener(new java.awt.event.ActionListener() {
+        updateStudent.setBackground(new java.awt.Color(102, 102, 102));
+        updateStudent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/configuration.png"))); // NOI18N
+        updateStudent.setBorder(null);
+        updateStudent.setBorderPainted(false);
+        updateStudent.setContentAreaFilled(false);
+        updateStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Operation1ActionPerformed(evt);
+                updateStudentActionPerformed(evt);
             }
         });
 
-        showStudents.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\showStudent.png")); // NOI18N
+        showStudents.setBackground(new java.awt.Color(102, 102, 102));
+        showStudents.setForeground(new java.awt.Color(102, 102, 102));
+        showStudents.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/showStudent.png"))); // NOI18N
+        showStudents.setBorder(null);
+        showStudents.setContentAreaFilled(false);
         showStudents.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showStudentsActionPerformed(evt);
@@ -86,27 +98,36 @@ public class home extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Operation");
+        jLabel3.setText("Update Student");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Show Students");
 
-        addAdmin.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\addAdmin.png")); // NOI18N
+        addAdmin.setBackground(new java.awt.Color(102, 102, 102));
+        addAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/addAdmin.png"))); // NOI18N
+        addAdmin.setBorder(null);
+        addAdmin.setContentAreaFilled(false);
         addAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addAdminActionPerformed(evt);
             }
         });
 
-        operation2.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\configuration1.png")); // NOI18N
-        operation2.addActionListener(new java.awt.event.ActionListener() {
+        updateAdmin.setBackground(new java.awt.Color(102, 102, 102));
+        updateAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/configuration1.png"))); // NOI18N
+        updateAdmin.setBorder(null);
+        updateAdmin.setContentAreaFilled(false);
+        updateAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                operation2ActionPerformed(evt);
+                updateAdminActionPerformed(evt);
             }
         });
 
-        showAdmin.setIcon(new javax.swing.ImageIcon("C:\\Users\\99999999999999999999\\Pictures\\Camera Roll\\project Image\\showAdmin.png")); // NOI18N
+        showAdmin.setBackground(new java.awt.Color(102, 102, 102));
+        showAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/showAdmin.png"))); // NOI18N
+        showAdmin.setBorder(null);
+        showAdmin.setContentAreaFilled(false);
         showAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showAdminActionPerformed(evt);
@@ -119,13 +140,14 @@ public class home extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Operation");
+        jLabel6.setText("Update Admin");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Show Admin");
 
-        jButton1.setText("NextPage");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/next.png"))); // NOI18N
+        jButton1.setText("Next Page");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -136,6 +158,14 @@ public class home extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel2)
+                .addGap(99, 99, 99)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(69, 69, 69))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -153,31 +183,25 @@ public class home extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(33, 33, 33)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(operation2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Operation1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(updateAdmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(updateStudent, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(64, 64, 64)
+                                .addComponent(jLabel6)))
                         .addGap(34, 34, 34)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(showAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
-                                .addComponent(showStudents, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(33, 33, 33)
                                 .addComponent(jLabel7))
-                            .addComponent(jButton1)))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jButton1)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(showAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                                    .addComponent(showStudents, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel2)
-                        .addGap(123, 123, 123)
-                        .addComponent(jLabel3)
-                        .addGap(113, 113, 113)
-                        .addComponent(jLabel4))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
+                        .addGap(126, 126, 126)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -187,30 +211,33 @@ public class home extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(addStudent)
                     .addComponent(showStudents)
-                    .addComponent(Operation1))
+                    .addComponent(updateStudent))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel4)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(addAdmin)
-                    .addComponent(operation2)
+                    .addComponent(updateAdmin)
                     .addComponent(showAdmin))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7))
-                .addGap(33, 33, 33)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7)))
+                .addGap(34, 34, 34)
                 .addComponent(jButton1)
-                .addGap(34, 34, 34))
+                .addGap(33, 33, 33))
         );
 
         jMenu1.setText("File");
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home.png"))); // NOI18N
         jMenuItem2.setText("Home");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,6 +247,7 @@ public class home extends javax.swing.JFrame {
         jMenu1.add(jMenuItem2);
 
         jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logout.png"))); // NOI18N
         jMenuItem4.setText("Logout");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,6 +261,7 @@ public class home extends javax.swing.JFrame {
         about.setText("About");
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/about.png"))); // NOI18N
         jMenuItem3.setText("About");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,7 +285,7 @@ public class home extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setBounds(0, 0, 609, 635);
+        setBounds(0, 0, 614, 635);
     }// </editor-fold>//GEN-END:initComponents
 
     private void addStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addStudentActionPerformed
@@ -266,12 +295,12 @@ public class home extends javax.swing.JFrame {
         object.setVisible(true);
     }//GEN-LAST:event_addStudentActionPerformed
 
-    private void Operation1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Operation1ActionPerformed
+    private void updateStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateStudentActionPerformed
         // TODO add your handling code here:
         setVisible(false);
         student object =new student();
         object.setVisible(true);
-    }//GEN-LAST:event_Operation1ActionPerformed
+    }//GEN-LAST:event_updateStudentActionPerformed
 
     private void addAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAdminActionPerformed
         // TODO add your handling code here:
@@ -280,14 +309,14 @@ public class home extends javax.swing.JFrame {
         object.setVisible(true);
     }//GEN-LAST:event_addAdminActionPerformed
 
-    private void operation2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_operation2ActionPerformed
+    private void updateAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateAdminActionPerformed
         // TODO add your handling code here:
          setVisible(false);
         admin object =new admin();
         object.setVisible(true);
         
         
-    }//GEN-LAST:event_operation2ActionPerformed
+    }//GEN-LAST:event_updateAdminActionPerformed
 
     private void showStudentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showStudentsActionPerformed
         // TODO add your handling code here:
@@ -367,7 +396,6 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Operation1;
     private javax.swing.JMenu about;
     private javax.swing.JButton addAdmin;
     private javax.swing.JButton addStudent;
@@ -386,8 +414,9 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton operation2;
     private javax.swing.JButton showAdmin;
     private javax.swing.JButton showStudents;
+    private javax.swing.JButton updateAdmin;
+    private javax.swing.JButton updateStudent;
     // End of variables declaration//GEN-END:variables
 }
