@@ -11,7 +11,7 @@ import java.sql.DriverManager; // Manages database drivers and establishes conne
 public class databaseConnection {
     // Constants for database connection details
     final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver"; // MySQL JDBC driver class
-    final static String DB_URL = "jdbc:mysql://localhost:3306/student 2"; // Database URL, connecting to 'student' database
+    final static String DB_URL = "jdbc:mysql://localhost:3306/student"; // Database URL, connecting to 'student' database
     final static String USER = "root"; // Username for the database connection
     final static String PASS = ""; // Password for the database connection (empty string here)
 
