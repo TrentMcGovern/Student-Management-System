@@ -151,7 +151,7 @@
         <Component class="javax.swing.JButton" name="Login">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/login1.png"/>
+              <Image iconType="3" name="/Images_final/login1.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Login"/>
           </Properties>
@@ -162,7 +162,7 @@
         <Component class="javax.swing.JButton" name="cancel">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/cancel1.png"/>
+              <Image iconType="3" name="/Images_final/cancel1.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cancel"/>
           </Properties>
@@ -175,7 +175,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/images/login.png"/>
+              <Image iconType="3" name="/Images_final/login.png"/>
             </Property>
           </Properties>
         </Component>
